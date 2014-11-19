@@ -90,7 +90,7 @@ define(["jquery", "jquery-mobile", "jquery-ui"], function($) {
 
 
 * add require-js file in html file, 'js/main' will be output file
-```
+```html
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -159,12 +159,12 @@ define(["jquery", "jquery-mobile", "jquery-ui"], function($) {
 })
 ```
 
-* create a shellscript to run  build/app.build.sh
+* create a shellscript to run  build/app.build.js
 ```sh
 r.js -o build/app.build.js 
 cd ./../production
-# comment following line before running this file. if r.js is working,
-# then you can remove unwanted files. otherwise you might lose all codes
+# comment following line before running this file for first. if r.js is working,
+# then you can remove unwanted files using following line. Otherwise you might lose all codes
 rm build js/libs/jquery js/libs/jquery-ui/ js/libs/jquery-mobile/ js/libs/jquery-ui-tabs/ js/app.js build.txt bower.json -r
 ```
 * run app.build.sh
