@@ -1,45 +1,46 @@
 requirejs-jquery-jquerymobile-jqueryui-boilerplate
 ==================================================
 
-Boilerplate for jQuery, jQuery mobile and jQuery UI implementation in requirejs
-* Install bower*
+ Boilerplate for jQuery, jQuery mobile and jQuery UI implementation in requirejs
 
+*Install bower*
+```
 sudo npm install -g bower
+```
 
 
 
 *create a file in project directory : bower.json*
---------------------------------------------------------------------
+```
 {
     "name": "My Project",
     "version": "1.0.0",
     "dependencies": {
-          //the value is the version you want,
-         // if you enter null it grabs the latest release
         "jquery": "1.9",
         "jquery-mobile": "1.4.5",
         "jquery-ui": null,  //remove this if not using
         "requirejs": null
     }
 }
--------------------------------------------------------------------
+```
 
 
 *create a file in project directory : bower.json*
-'''
+```
 {
     "directory": "js/libs"
 }
-'''
+```
 
 
 *run bower*
+```
 bower install
-
+```
 
 
 * add require-js in html file, 'js/main' will be output file*
--------------------------------------------------------------------------
+```
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -63,7 +64,7 @@ bower install
         <p>Hello world! This is HTML5 Boilerplate.</p>
     </body>
 </html>
----------------------------------------------------------------
+```
 
 
 
