@@ -57,6 +57,7 @@ bower install
 </html>
 
 # create main.js
+'''
 // setting library paths for requirejs
 require.config({
     paths: {
@@ -79,7 +80,7 @@ require.config({
 require(['jquery', 'jquery-mobile', 'jquery-ui', 'app'], function($, jquerymobile, jqueryui, App){
     new App;
 });
-
+'''
 # create app.js with project js code
 define(['jquery', 'jquery-mobile', 'jquery-ui'], function($, jquerymobile, jqueryui){
     console.log("it's working!"); //
