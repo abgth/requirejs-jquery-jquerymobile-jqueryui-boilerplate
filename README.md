@@ -3,14 +3,14 @@ requirejs-jquery-jquerymobile-jqueryui-boilerplate
 
  Boilerplate for jQuery, jQuery mobile and jQuery UI implementation in requirejs
 
-*Install bower*
+* Install bower
 ```
 sudo npm install -g bower
 ```
 
 
 
-*create a file in project directory : bower.json*
+* create a file in project directory : bower.json
 ```
 {
     "name": "My Project",
@@ -25,7 +25,7 @@ sudo npm install -g bower
 ```
 
 
-*create a file in project directory : bower.json*
+* create a file in project directory : bower.json
 ```
 {
     "directory": "js/libs"
@@ -33,13 +33,13 @@ sudo npm install -g bower
 ```
 
 
-*run bower*
+* run bower
 ```
 bower install
 ```
 
 
-* add require-js in html file, 'js/main' will be output file*
+* add require-js in html file, 'js/main' will be output file
 ```
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -95,7 +95,7 @@ require(['jquery', 'jquery-mobile', 'jquery-ui', 'app'], function($, jquerymobil
 ```
 
 
-*create app.js with project js code*
+* create app.js with project js code
 ```javascript
 define(['jquery', 'jquery-mobile', 'jquery-ui'], function($, jquerymobile, jqueryui){
     console.log("it's working!"); //
