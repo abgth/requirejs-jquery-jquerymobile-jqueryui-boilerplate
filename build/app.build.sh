@@ -1,4 +1,4 @@
-r.js -o app.build.js 
-cd ./../../production
+r.js -o build/app.build.js 
+cd ./../production
 ls
-#rm build js/libs/jquery js/libs/jquery-ui/ js/libs/jquery-mobile/ js/libs/jquery-ui-tabs/ -r
+rm build js/libs/jquery js/libs/jquery-ui/ js/libs/jquery-mobile/ js/libs/jquery-ui-tabs/ js/app.js build.txt bower.json -r
