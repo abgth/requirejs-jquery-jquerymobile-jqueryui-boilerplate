@@ -1,4 +1,4 @@
-requirejs-jquery-jquerymobile-jqueryui-boilerplate
+Requirejs jQuery jQuery-Mobile JQueryUI Boilerplate template
 ==================================================
 
  Boilerplate for jQuery, jQuery mobile and jQuery UI implementation in requirejs
@@ -16,10 +16,10 @@ sudo npm install -g bower
     "name": "My Project",
     "version": "1.0.0",
     "dependencies": {
-        "jquery": "1.9",
-        "jquery-mobile": "1.4.5",
-        "jquery-ui": null,  //remove this if not using
-        "requirejs": null
+        "jquery": "latest",
+        "jquery-mobile": "latest",
+        "jquery-ui": "latest",  
+        "requirejs": "latest"
     }
 }
 ```
