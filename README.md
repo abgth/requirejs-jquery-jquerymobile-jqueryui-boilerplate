@@ -89,7 +89,7 @@ define(["jquery", "jquery-mobile", "jquery-ui"], function($) {
 ```
 
 
-* add require-js in html file, 'js/main' will be output file
+* add require-js file in html file, 'js/main' will be output file
 ```
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -147,7 +147,7 @@ define(["jquery", "jquery-mobile", "jquery-ui"], function($) {
 </html>
 ```
 
-* create app.build.js
+* create build/app.build.js
 ```javascript
 ({
 	appDir: "../",
@@ -159,7 +159,7 @@ define(["jquery", "jquery-mobile", "jquery-ui"], function($) {
 })
 ```
 
-* create shell script app.build.sh
+* create a shellscript to run  build/app.build.sh
 ```sh
 r.js -o build/app.build.js 
 cd ./../production
@@ -170,4 +170,42 @@ rm build js/libs/jquery js/libs/jquery-ui/ js/libs/jquery-mobile/ js/libs/jquery
 * run app.build.sh
 ```sh
 bash bulid/app.build.sh
+```
+
+The directory *production*, contain all minified files 
+```
+requirejs-jquery-jquerymobile-jqueryui-boilerplate
+|-- bower.json
+|-- build
+|   |-- app.build.js
+|   `-- app.build.sh
+|-- css
+|   |-- jquery.mobile-1.4.5.min.css
+|   `-- main.css
+|-- index.html
+|-- js
+|   |-- app.js
+|   |-- libs
+|   |   |-- jquery
+|   |   |-- jquery-hashchange
+|   |   |-- jquery-mobile
+|   |   |-- jquery-ui
+|   |   |-- jquery-ui-tabs
+|   |   `-- requirejs
+|   `-- main.js
+|-- LICENSE
+`-- README.md
+production/
+|-- css
+|   |-- jquery.mobile-1.4.5.min.css
+|   `-- main.css
+|-- index.html
+|-- js
+|   |-- libs
+|   |   |-- jquery-hashchange
+|   |   `-- requirejs
+|   `-- main.js
+|-- LICENSE
+`-- README.md
+
 ```
