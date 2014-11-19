@@ -3,6 +3,12 @@ Requirejs jQuery jQuery-Mobile JQueryUI Boilerplate template
 
  Boilerplate for jQuery, jQuery mobile and jQuery UI implementation in requirejs
 
+* Install requirejs
+```
+sudo npm install -g requirejs
+```
+
+
 * Install bower
 ```
 sudo npm install -g bower
@@ -139,4 +145,23 @@ define(["jquery", "jquery-mobile", "jquery-ui"], function($) {
 
     </body>
 </html>
+```
+
+* create app.build.js
+```javascript
+({
+	appDir: "../",
+	baseUrl: "js",
+	dir: "../../production",
+	mainConfigFile:"./../js/main.js",
+	name:"main",
+	optimizeCss: "standard"
+})
+```
+
+* app.build.sh
+```sh
+r.js -o app.build.js 
+cd ./../../production
+rm build js/libs/jquery js/libs/jquery-ui/ js/libs/jquery-mobile/ js/libs/jquery-ui-tabs/ -r
 ```
