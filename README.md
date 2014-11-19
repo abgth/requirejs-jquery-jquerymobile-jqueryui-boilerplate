@@ -159,9 +159,15 @@ define(["jquery", "jquery-mobile", "jquery-ui"], function($) {
 })
 ```
 
-* app.build.sh
+* create shell script app.build.sh
 ```sh
-r.js -o app.build.js 
-cd ./../../production
-rm build js/libs/jquery js/libs/jquery-ui/ js/libs/jquery-mobile/ js/libs/jquery-ui-tabs/ -r
+r.js -o build/app.build.js 
+cd ./../production
+# comment following line before running this file. if r.js is working,
+# then you can remove unwanted files. otherwise you might lose all codes
+rm build js/libs/jquery js/libs/jquery-ui/ js/libs/jquery-mobile/ js/libs/jquery-ui-tabs/ js/app.js build.txt bower.json -r
+```
+* run app.build.sh
+```sh
+bash bulid/app.build.sh
 ```
