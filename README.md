@@ -9,7 +9,7 @@ sudo npm install -g bower
 
 
 *create a file in project directory : bower.json*
-'''
+--------------------------------------------------------------------
 {
     "name": "My Project",
     "version": "1.0.0",
@@ -22,7 +22,7 @@ sudo npm install -g bower
         "requirejs": null
     }
 }
-'''
+-------------------------------------------------------------------
 
 
 *create a file in project directory : bower.json*
@@ -39,7 +39,7 @@ bower install
 
 
 * add require-js in html file, 'js/main' will be output file*
-'''
+-------------------------------------------------------------------------
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -63,13 +63,12 @@ bower install
         <p>Hello world! This is HTML5 Boilerplate.</p>
     </body>
 </html>
-
-'''
+---------------------------------------------------------------
 
 
 
 * create main.js*
-'''
+```javascript
 // setting library paths for requirejs
 require.config({
     paths: {
@@ -92,13 +91,13 @@ require.config({
 require(['jquery', 'jquery-mobile', 'jquery-ui', 'app'], function($, jquerymobile, jqueryui, App){
     new App;
 });
-'''
+```
 
 
 *create app.js with project js code*
-'''
+```javascript
 define(['jquery', 'jquery-mobile', 'jquery-ui'], function($, jquerymobile, jqueryui){
     console.log("it's working!"); //
 });
 
-'''
+```
